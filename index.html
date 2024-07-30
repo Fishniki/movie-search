@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MovieSearch.com</title>
+</head>
+<body>
+    <section class="text-center w-screen p-5">
+        <h1 class="font-bold text-4xl">MovieSearch.com</h1>
+        <p class="text-lg">Cari film yang ingin kamu tonton</p>
+        <input id="user-input" type="text" class="border rounded-md text-lg">
+        <button id="search-button" onclick="GetFilm()" class="px-5 py-2 rounded-sm text-slate-700 font-semibold hover:bg-sky-400 hover:text-white bg-sky-200">Cari</button>
+    </section>
+
+    <section id="movie-list" class="flex flex-wrap justify-center w-4/5 m-auto">
+        <!-- Detail dimunculkan saat java script di jalankan -->
+    </section>
+
+    <div id="modal" onclick="modalOut()" style="display: none; background-color: rgba(0, 0, 0, 0.5);" class="fixed top-0 left-0 justify-center items-center w-screen h-screen">
+        <div id="modal-content" class="bg-sky-100 rounded-md shadow-lg border z-50 w-1/2 p-5">
+            <!-- Detail dimunculkan saat java script di jalankan -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
